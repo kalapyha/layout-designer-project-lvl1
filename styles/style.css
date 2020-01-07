@@ -1,22 +1,21 @@
 /* RESET */
-html, body {
+html, body, main, h1, h2, p, a  {
 	margin: 0px;
 	padding: 0px;
-
+	font-family: Helvetica, sans-serif;
+	text-decoration: none;
 }
 
 
 /* END of the RESET */
 
 header {
-	display: flex;
-	flex-wrap: nowrap;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 100%;
-	height: 60px;
+	height: 70px;
 	padding: 5px;
 	background: #fff;
+	align-items: center;
 }
 
 
@@ -31,8 +30,70 @@ nav ul li {
 }
 
 nav ul li a {
-	text-decoration: none;
+
 	color: #000;
+}
+
+h2 {
+	color: #363636;
+	padding-bottom: 15px;
+}
+
+label {
+	padding-bottom: 15px;
+  display: inline-block;
+}
+
+form {
+	width: 350px;
+}
+
+fieldset {
+	margin-top: 20px;
+	padding: 20px 15px;
+	border: 2px solid #29ab87;
+}
+
+legend {
+	color: #29ab87;
+	font-size: 20px;
+}
+
+input[type=text], select {
+	height: 25px;
+	display: inline-block;
+	float: right;
+	border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+footer {
+	padding: 20px 0px;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+footer, footer h2, footer a {
+	background-color: #34495e;
+	color: #fff;
+}
+
+footer p {
+	padding: 15px;
+}
+
+footer li {
+	padding-top: 5px;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.light-grey-bg {
+	background-color: #f5f5f5;
 }
 
 .sticky {
@@ -40,12 +101,135 @@ nav ul li a {
   top: 0;
 }
 
+.button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.button-white {
+	border: 2px solid #fff;
+	background: rgb(255, 255, 255, 0.1);
+	border-radius: 5px;
+	color: #fff
+}
+
+.button-green {
+	border: 2px solid #29ab87;
+	background: rgb(255, 255, 255, 0.1);
+	border-radius: 5px;
+	color: #29ab87
+}
+.button-green:hover {
+	background: rgb(41,171,135, 0.9);
+	transition: 1s;
+	color:  #fff;
+}
+
+.button-white:hover {
+	background: rgb(255, 255, 255, 0.3);
+	transition: 1s;
+}
+
+.button a {
+	color: #fff;
+}
+
+.advantages-content {
+	max-width: 32%;
+	margin: 70px 0px;
+	padding: 0px 5px;
+	text-align: left;
+}
+
+.desc-img-wrapper {
+	max-width: 45%;
+}
+
+.desc-img-wrapper img{
+	max-width: 35vh;
+	height: auto;
+}
+
+.description-content {
+	max-width: 30%;
+}
+
+
+#header-logo {
+	align-items: center;
+}
+
 #header-logo, #header-logo p {
-	display: flex;
 	padding-left: 15px;
 }
-#header-logo img {
+
+#header-logo img, #footer-builder-info img {
 	height: 50px;
 	width: auto;
 }
 
+#welcome-section {
+	height:40vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../images/banner.png');
+	background-size: cover;
+	background-position: center;
+	margin-top: -20px; /* TODO: This margin fix the gap between header and welcome section */
+}
+
+#welcome-section h1, #welcome-section p {
+	color: #fff;
+	margin: 5px 0px;
+}
+
+#welcome-section img {
+	height: 120px;
+	width: auto;
+}
+
+#advantages {
+	margin: 0 auto;
+	max-width: 1000px;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+
+#about-us, #rest-places {
+	height: 35vh;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#lead-wrapper{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 65px;
+}
+
+#lead-wrapper h2 {
+	margin-top: 45px;
+}
+
+#footer-info {
+	align-items:  center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#footer-builder-info {
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+#footer-copyright {
+	padding-left: 0px;
+}
