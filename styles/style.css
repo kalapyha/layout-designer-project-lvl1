@@ -1,5 +1,12 @@
 /* RESET */
-html, body, main, h1, h2, p, a  {
+
+html,
+body,
+main,
+h1,
+h2,
+p,
+a {
 	margin: 0px;
 	padding: 0px;
 	font-family: Helvetica, sans-serif;
@@ -18,7 +25,6 @@ header {
 	align-items: center;
 }
 
-
 nav ul {
 	display: flex;
 	padding: 0px;
@@ -30,7 +36,6 @@ nav ul li {
 }
 
 nav ul li a {
-
 	color: #000;
 }
 
@@ -41,7 +46,6 @@ h2 {
 
 label {
 	padding-bottom: 15px;
-  display: inline-block;
 }
 
 form {
@@ -59,13 +63,12 @@ legend {
 	font-size: 20px;
 }
 
-input[type=text], select {
+input[type=text],
+select {
 	height: 25px;
-	display: inline-block;
-	float: right;
 	border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+	border-radius: 5px;
+	box-sizing: border-box;
 }
 
 footer {
@@ -74,7 +77,9 @@ footer {
 	align-items: flex-start;
 }
 
-footer, footer h2, footer a {
+footer,
+footer h2,
+footer a {
 	background-color: #34495e;
 	color: #fff;
 }
@@ -97,18 +102,18 @@ footer li {
 }
 
 .sticky {
-  position: sticky;
-  top: 0;
+	position: sticky;
+	top: 0;
 }
 
 .button {
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 30px;
-  cursor: pointer;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 30px;
+	cursor: pointer;
 }
 
 .button-white {
@@ -124,10 +129,11 @@ footer li {
 	border-radius: 5px;
 	color: #29ab87
 }
+
 .button-green:hover {
-	background: rgb(41,171,135, 0.9);
+	background: rgb(41, 171, 135, 0.9);
 	transition: 1s;
-	color:  #fff;
+	color: #fff;
 }
 
 .button-white:hover {
@@ -150,7 +156,7 @@ footer li {
 	max-width: 45%;
 }
 
-.desc-img-wrapper img{
+.desc-img-wrapper img {
 	max-width: 35vh;
 	height: auto;
 }
@@ -159,32 +165,40 @@ footer li {
 	max-width: 30%;
 }
 
+.fieldset-wrapper {
+	justify-content: space-between;
+	padding-bottom: 10px;
+}
 
 #header-logo {
 	align-items: center;
 }
 
-#header-logo, #header-logo p {
+#header-logo,
+#header-logo p {
 	padding-left: 15px;
 }
 
-#header-logo img, #footer-builder-info img {
+#header-logo img,
+#footer-builder-info img {
 	height: 50px;
 	width: auto;
 }
 
 #welcome-section {
-	height:40vh;
+	height: 40vh;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-image: url('../images/banner.png');
 	background-size: cover;
 	background-position: center;
-	margin-top: -20px; /* TODO: This margin fix the gap between header and welcome section */
+	margin-top: -20px;
+	/* TODO: This margin fix the gap between header and welcome section */
 }
 
-#welcome-section h1, #welcome-section p {
+#welcome-section h1,
+#welcome-section p {
 	color: #fff;
 	margin: 5px 0px;
 }
@@ -201,14 +215,14 @@ footer li {
 	align-items: baseline;
 }
 
-
-#about-us, #rest-places {
+#about-us,
+#rest-places {
 	height: 35vh;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
-#lead-wrapper{
+#lead-wrapper {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -220,7 +234,7 @@ footer li {
 }
 
 #footer-info {
-	align-items:  center;
+	align-items: center;
 	flex-direction: row;
 	justify-content: center;
 }
