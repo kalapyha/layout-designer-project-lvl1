@@ -117,8 +117,11 @@ footer li {
 	top: 0;
 }
 
-.width-1000{
+.width-1000 {
 	max-width: 1000px;
+}
+
+.description-wrapper {
 	margin: 0 auto;
 }
 
@@ -203,15 +206,13 @@ footer li {
 }
 
 #welcome-section {
-	height: 40vh;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-image: url('../images/banner.png');
 	background-size: cover;
 	background-position: center;
-	margin-top: -20px;
-	/* TODO: This margin fix the gap between header and welcome section */
+	padding: 10vh 0;
 }
 
 #welcome-section h1,
