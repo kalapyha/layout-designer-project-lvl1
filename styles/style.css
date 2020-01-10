@@ -25,23 +25,18 @@ header {
 	align-items: center;
 }
 
-nav ul {
-	display: flex;
-	padding: 0px;
-}
-
-nav ul li {
-	list-style: none;
-	padding-right: 15px;
-}
-
-nav ul li a {
-	color: #000;
+h1 {
+	font-size: 2em;
 }
 
 h2 {
 	color: #363636;
 	padding-bottom: 15px;
+	font-size: 1.8em;
+}
+
+p {
+	padding-bottom: 10px;
 }
 
 label {
@@ -63,8 +58,24 @@ legend {
 	font-size: 20px;
 }
 
+
+nav ul {
+	display: flex;
+	padding: 0px;
+}
+
+nav ul li {
+	list-style: none;
+	padding-right: 15px;
+}
+
+nav ul li a {
+	color: #000;
+}
+
 input[type=text],
 select {
+	width: 120px;
 	height: 25px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -104,6 +115,11 @@ footer li {
 .sticky {
 	position: sticky;
 	top: 0;
+}
+
+.width-1000{
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .button {
@@ -168,6 +184,7 @@ footer li {
 .fieldset-wrapper {
 	justify-content: space-between;
 	padding-bottom: 10px;
+
 }
 
 #header-logo {
@@ -247,6 +264,7 @@ footer li {
 #footer-copyright {
 	padding-left: 0px;
 }
+
 
 @media only screen and (max-width: 950px) {
 	/* For mobile devices: */
