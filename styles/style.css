@@ -27,6 +27,7 @@ header {
 
 h1 {
 	font-size: 2em;
+	padding: 15px;
 }
 
 h2 {
@@ -36,7 +37,17 @@ h2 {
 }
 
 p {
-	padding-bottom: 10px;
+	padding: 10px 10px 10px 0;
+	line-height: 1.4;
+}
+
+a {
+	color: #FFF;
+}
+
+li {
+	list-style: none;
+	padding: 10px;
 }
 
 label {
@@ -58,21 +69,6 @@ legend {
 	font-size: 20px;
 }
 
-
-nav ul {
-	display: flex;
-	padding: 0px;
-}
-
-nav ul li {
-	list-style: none;
-	padding-right: 15px;
-}
-
-nav ul li a {
-	color: #000;
-}
-
 input[type=text],
 select {
 	width: 120px;
@@ -83,24 +79,22 @@ select {
 }
 
 footer {
+	color: #fff;
 	padding: 20px 0px;
 	justify-content: space-around;
 	align-items: flex-start;
 }
 
-footer,
-footer h2,
-footer a {
-	background-color: #34495e;
-	color: #fff;
+.color-black {
+	color: #000;
 }
 
-footer p {
-	padding: 15px;
+.color-white {
+	color: #FFF;
 }
 
-footer li {
-	padding-top: 5px;
+.disk-style-list {
+	list-style: disc;
 }
 
 .flex {
@@ -108,17 +102,39 @@ footer li {
 	flex-wrap: nowrap;
 }
 
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-space-between {
+	justify-content: space-between;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
 .light-grey-bg {
 	background-color: #f5f5f5;
 }
 
+.navy-bg {
+	background-color: #34495e;
+}
+
 .sticky {
+	padding: 0 15px;
 	position: sticky;
 	top: 0;
 }
 
 .width-1000 {
 	max-width: 1000px;
+}
+
+.max-width-30 {
+	max-width: 30%;
 }
 
 .wrapper-center {
@@ -139,7 +155,7 @@ footer li {
 	border: 2px solid #fff;
 	background: rgb(255, 255, 255, 0.1);
 	border-radius: 5px;
-	color: #fff
+	/*color: #fff*/
 }
 
 .button-green {
@@ -160,115 +176,61 @@ footer li {
 	transition: 1s;
 }
 
-.button a {
-	color: #fff;
-}
-
 .advantages-content {
-	max-width: 32%;
+	/*max-width: 30%;*/
 	margin: 70px 0px;
 	padding: 0px 5px;
 	text-align: left;
 }
 
 .desc-img-wrapper {
-	max-width: 45%;
+	max-width: 35%;
 }
 
 .desc-img-wrapper img {
-	max-width: 35vh;
+	max-width: 100%;
 	height: auto;
 }
 
-.description-content {
-	max-width: 30%;
-}
-
 .fieldset-wrapper {
-	justify-content: space-between;
 	padding-bottom: 10px;
-
 }
 
-#header-logo {
-	align-items: center;
+.builder-logo img {
+	padding-right: 15px;
+	height: auto;
+	width: 50px;
 }
 
-#header-logo,
-#header-logo p {
-	padding-left: 15px;
-}
-
-#header-logo img,
-#footer-builder-info img {
-	height: 50px;
-	width: auto;
-}
-
-#welcome-section {
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.welcome-section {
 	background-image: url('../images/banner.png');
 	background-size: cover;
 	background-position: center;
-	padding: 10vh 0;
+	padding: 5em 0;
 }
 
-#welcome-section h1,
-#welcome-section p {
-	color: #fff;
-	margin: 5px 0px;
+.welcome-section img {
+	height: auto;
+	width: 140px;
 }
 
-#welcome-section img {
-	height: 120px;
-	width: auto;
-}
-
-#advantages {
-	margin: 0 auto;
-	max-width: 1000px;
-	justify-content: space-between;
-	align-items: baseline;
-}
-
-#about-us,
-#rest-places {
-	height: 35vh;
+.place-description {
+	padding: 2em 0;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
-#lead-wrapper {
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 65px;
+.form-wrapper {
+	padding: 65px 0;
 }
-
-#lead-wrapper h2 {
-	margin-top: 45px;
-}
-
-#footer-info {
-	align-items: center;
-	flex-direction: row;
-	justify-content: center;
-}
-
-#footer-builder-info {
-	flex-direction: column;
-	justify-content: flex-end;
-}
-
-#footer-copyright {
-	padding-left: 0px;
-}
-
 
 @media only screen and (max-width: 950px) {
 	/* For mobile devices: */
+	footer {
+		flex-direction: column;
+		align-items: center;
+	}
+
 	#advantages {
 		flex-direction: column;
 		align-items: center;
@@ -284,32 +246,3 @@ footer li {
 	}
 }
 
-@media only screen and (max-width: 740px) {
-	/* For mobile phones: */
-	nav ul li a,
-	#header-logo p {
-		font-size: 0.9em;
-	}
-	.description-content {
-		max-width: 45%;
-	}
-	.desc-img-wrapper {
-		max-width: 45%;
-	}
-	.desc-img-wrapper img {
-		border-radius: 15px;
-		max-width: 25vh;
-		height: auto;
-	}
-	footer {
-		padding: 10px;
-	}
-	footer ul li a,
-	footer h2 {
-		text-align: center;
-		font-size: 0.9em;
-	}
-	footer p {
-		margin: 5px;
-	}
-}
