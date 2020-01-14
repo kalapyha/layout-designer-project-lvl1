@@ -10,7 +10,7 @@
 	<body>
 		<header class="sticky flex">
 			<div class="builder-logo flex flex-center">
-				<img src="images/logo.svg" alt="main logo of the moon complex" title="main logo">
+				<img src="images/logo.svg" alt="main logo of the moon complex" title="main logo" class="builder-logo-img">
 				<p>Лунное море</p>
 			</div>
 			<nav>
@@ -23,12 +23,12 @@
 		</header>
 		<main>
 			<section class="welcome-section flex flex-center flex-column color-white">
-				<img src="images/logo.svg" alt="main logo of the moon complex" title="main logo welcome section">
+				<img src="images/logo.svg" alt="main logo of the moon complex" title="main logo welcome section" class="welcome-section-img">
 				<h1>ЖК «Лунное море»</h1>
 				<p>Место, откуда не хочется улетать</p>
 				<a href="#lead-form" class="button button-white" >Забронировать</a>
 			</section>
-			<section id="advantages" class="width-1000 wrapper-center flex-space-between flex">
+			<section id="advantages" class="wrapper-center width-1000 flex-space-between flex">
 				<div class="advantages-content max-width-30">
 					<h2>Уникальный вид</h2>
 					<p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы
@@ -50,7 +50,7 @@
 			</section>
 			<section class="light-grey-bg">
 				<div class="wrapper-center width-1000">
-					<div id="about-us" class="place-description flex light-grey-bg">
+					<div id="about-us" class="place-description flex">
 						<div class="max-width-30">
 							<h2>О ЖК «Лунное море»</h2>
 							<p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы
@@ -62,7 +62,7 @@
 							</p>
 						</div>
 						<div class="desc-img-wrapper">
-							<img src="images/moon-1.jpg" alt="moon view" title="moon view">
+							<img src="images/moon-1.jpg" alt="moon view" title="moon view" class="desc-img">
 						</div>
 					</div>
 				</div>
@@ -70,7 +70,7 @@
 			<section class="wrapper-center width-1000">
 				<div id="rest-places" class="place-description flex">
 					<div class="desc-img-wrapper">
-						<img src="images/moon-2.jpg" alt="astronaut" title="astronaut and beer">
+						<img src="images/moon-2.jpg" alt="astronaut" title="astronaut and beer" class="desc-img">
 					</div>
 					<div class="max-width-30">
 						<h2>Места для отдыха</h2>
@@ -86,7 +86,7 @@
 			</section>
 			<section class="light-grey-bg">
 				<div class="wrapper-center width-1000">
-					<div class="form-wrapper flex flex-center flex-column light-grey-bg">
+					<div class="flex flex-center flex-column light-grey-bg">
 						<h2>Оставьте заявку сегодня!</h2>
 						<form action="index.html" method="post" id="lead-form">
 							<fieldset>
@@ -139,27 +139,29 @@
 				</div>
 			</section>
 		</main>
-		<footer class="flex navy-bg color-white">
-			<div class="flex-column flex">
-				<div  class="builder-logo flex-center flex">
-					<img src="images/logo.svg" alt="main logo of the moon complex" title="main logo">
-					<p>Лунное море</p>
+		<footer class="navy-bg color-white">
+			<div class="wrapper-center flex flex-space-around">
+				<div class="flex-column flex">
+					<div  class="builder-logo flex-center flex">
+						<img src="images/logo.svg" alt="main logo of the moon complex" title="main logo" class="builder-logo-img">
+						<p>Лунное море</p>
+					</div>
+					<p>&copy; 2032 год</p>
 				</div>
-				<p>&copy; 2032 год</p>
-			</div>
-			<div id="footer-project-doc">
-				<h2 class="color-white">Проектная документация</h2>
-				<ul>
-					<li class="disk-style-list"><a href="#">Скачать</a></li>
-					<li class="disk-style-list"><a href="#">Посмотреть на сайте</a></li>
-				</ul>
-			</div>
-			<div id="footer-about">
-				<h2 class="color-white">О застройщике</h2>
-				<ul>
-					<li class="disk-style-list"><a href="#">Отзывы</a></li>
-					<li class="disk-style-list"><a href="#">Сайт компании</a></li>
-				</ul>
+				<div id="footer-project-doc">
+					<h2 class="color-white">Проектная документация</h2>
+					<ul class="padding-left-30">
+						<li class="disk-style-list"><a href="#">Скачать</a></li>
+						<li class="disk-style-list"><a href="#">Посмотреть на сайте</a></li>
+					</ul>
+				</div>
+				<div id="footer-about">
+					<h2 class="color-white">О застройщике</h2>
+					<ul class="padding-left-30">
+						<li class="disk-style-list"><a href="#">Отзывы</a></li>
+						<li class="disk-style-list"><a href="#">Сайт компании</a></li>
+					</ul>
+				</div>
 			</div>
 		</footer>
 	</body>
